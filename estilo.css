@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(131, 48, 18);
+}
+h1{
+    color: rgb(15, 15, 105);
+    text-align: center;
+}
+.logo{
+    width: 50px;
+}
+.colorpropio{
+    background-color: rgb(92, 92, 228);
+}
+h2{
+    color: rgb(15, 15, 105);
+    text-align: center;
+}
+p{
+   width: 300px;
+   height: auto;
+   border: 2px black solid;
+   border-radius: 20px;
+}
+h3{
+    color: black;
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr;
+    gap: 10px;
+    grid-template-areas: ;
+}
+
