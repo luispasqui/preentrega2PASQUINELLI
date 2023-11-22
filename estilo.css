@@ -25,11 +25,38 @@ h3{
     color: black;
     text-align: center;
 }
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 1.5fr;
-    gap: 10px;
-    grid-template-areas: ;
+.container {  display: grid;
+    grid-template-columns: 0fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Nav Nav Nav"
+      "MAIN MAIN FOTOS"
+      "FOOTER FOOTER FOOTER";
+  }
+  
+  .Nav { grid-area: Nav; }
+  
+  .MAIN { grid-area: MAIN; }
+  
+  .FOTOS { grid-area: FOTOS; }
+  
+  .FOOTER { grid-area: FOOTER; }
+
+@media screen and(max-widht=480px){
+    .container{  
+        width: 100vw;
+        height: 100vh;          
+       
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr;
+        grid-template-areas:
+          "Nav Nav"
+          "MAIN"
+          "FOTOS"
+          "F00TER";
+      }
 }
+  
 
